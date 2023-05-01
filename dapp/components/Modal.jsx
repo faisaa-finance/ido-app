@@ -13,7 +13,7 @@ function Modal({ setopenModal, amount  }) {
   const [isTxnLoading, setisTxnLoading] = useState(false);
   const { isWeb3Enabled, web3EnableError, Moralis } = useMoralis();
   const { data: tokenInfo } = useToken({
-    address: "0x087D02D0e631eDc5bc63a61daDA5fFc139D10a92",
+    address: "0xb36d93b8CC7E5F1F02fd80925Cf29211d0e05b8e",
   });
   // defining contract function
   const {
@@ -24,7 +24,7 @@ function Modal({ setopenModal, amount  }) {
     isLoading,
   } = useWeb3Contract({
     abi: abi,
-    contractAddress:"0x7635Bb7CFA306eafeCE9558461fF1F43B1a3E3b9",
+    contractAddress:"0xEE17010046539D60D5A6e745B467046c3fF90D8a",
     functionName: "buyTokens",
     params: {
       _beneficiary: address,
