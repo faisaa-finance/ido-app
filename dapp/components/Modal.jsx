@@ -39,7 +39,7 @@ function Modal({ setopenModal, amount  }) {
       await buyTokens({
         onSuccess: handleSuccess,
         onError: (error) => {
-          // console.log(error),
+           console.log(error),
           setisTxnLoading(false);
         },
       });
@@ -148,7 +148,7 @@ function Modal({ setopenModal, amount  }) {
                 <span>{toFixed(amount)} $FAISAA</span>
               </p>
               <a
-                href={`${process.env.BLOCKCHAIN_EXPLORER_URL}/${contractData?.hash}`}
+                href={`https://scan.test.btcs.network/${contractData?.hash}`}
                 className="txn-hash"
                 target="_blank"
                 rel="noopener noreferrer"
