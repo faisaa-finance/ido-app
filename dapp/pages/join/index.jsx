@@ -89,7 +89,7 @@ function Presale() {
                 <h4>$0.25</h4>
               </div>
               <div className="presale-info_rounds">
-                <p>IDO ends in:</p>
+                <p>IDO Starts in:</p>
                 <h4>
                   <Countdown
                     date={new Date("2023-05-05T12:00:00-06:00")}
