@@ -13,7 +13,7 @@ function Modal({ setopenModal, amount  }) {
   const [isTxnLoading, setisTxnLoading] = useState(false);
   const { isWeb3Enabled, web3EnableError, Moralis } = useMoralis();
   const { data: tokenInfo } = useToken({
-    address: "0xEfDAd9E31971c48024D4172F1ebE703Fd55645FE",
+    address: "0x087D02D0e631eDc5bc63a61daDA5fFc139D10a92",
   });
   // defining contract function
   const {
@@ -24,7 +24,7 @@ function Modal({ setopenModal, amount  }) {
     isLoading,
   } = useWeb3Contract({
     abi: abi,
-    contractAddress:"0xf8Dcd8785F2dD93395448b8D5527b8fc3EE18753",
+    contractAddress:"0x7635Bb7CFA306eafeCE9558461fF1F43B1a3E3b9",
     functionName: "buyTokens",
     params: {
       _beneficiary: address,
@@ -142,13 +142,13 @@ function Modal({ setopenModal, amount  }) {
             </div>
             {/* modal details for txn loading and success  */}
             <div className="modal-info">
-              <h4>{TxnSuccess ? "Transaction Processed" : "Swapping"}</h4>
+              <h4>{TxnSuccess ? "Transaction Processed" : "Committing"}</h4>
               <p>
                 <span>{amount} wCORE</span>&nbsp;for &nbsp;
                 <span>{toFixed(amount)} $FAISAA</span>
               </p>
               <a
-                href={`https://scan.test.btcs.network/${contractData?.hash}`}
+                href={`https://scan.test.btcs.network/tx/${contractData?.hash}`}
                 className="txn-hash"
                 target="_blank"
                 rel="noopener noreferrer"
