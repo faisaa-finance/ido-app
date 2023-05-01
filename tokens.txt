@@ -1,0 +1,3 @@
+$ npx hardhat run --network dev scripts/deploy.js
+Crowdsale: 0xe2A4CE9054B209Ba0C0fd35A15AfE04864A42DaB
+Faisaa 0x9A3aFfb7647F55e0aD9b90A235b8132648A0EdcA
