@@ -116,8 +116,8 @@ function Presale() {
                     </span>
                   </label>
                   <input
-                    min={0.17}
-                    max={100}
+                    // min={0.04}
+                    // max={1}
                     id="amount"
                     onChange={(e) => {
                       setAmount(e.target.value);
