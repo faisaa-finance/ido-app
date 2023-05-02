@@ -1,3 +1,4 @@
 $ npx hardhat run --network dev scripts/deploy.js
-Crowdsale: 0xEE17010046539D60D5A6e745B467046c3fF90D8a
-Faisaa 0xb36d93b8CC7E5F1F02fd80925Cf29211d0e05b8e
+Compiled 8 Solidity files successfully
+Crowdsale: 0xd4E6b5390C7B3f5E07d866E1551CB7C3327638D8
+Faisaa 0x67742bB42e5EEA9083a0BEDA0CE65BaB04703E79

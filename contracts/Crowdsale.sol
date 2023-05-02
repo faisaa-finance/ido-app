@@ -25,9 +25,9 @@ contract Crowdsale {
 
   address owner;
 
- uint256 public investorMinCap = 170000000000000000;
+ uint256 public investorMinCap = 660000000000000000;
 
- uint256 public investorMaxCap= 100000000000000000000;
+ uint256 public investorMaxCap= 6565980000000000000000;
 
 
   event TokenPurchase(
